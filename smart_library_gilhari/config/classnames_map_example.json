@@ -1,0 +1,7 @@
+{
+  "Library": "com.softwaretree.jdxjson2example.model.Library",
+  "Book": "com.softwaretree.jdxjson2example.model.Book",
+  "Member": "com.softwaretree.jdxjson2example.model.Member",
+  "Staff": "com.softwaretree.jdxjson2example.model.Staff",
+  "LibraryTransaction": "com.softwaretree.jdxjson2example.model.LibraryTransaction"
+}

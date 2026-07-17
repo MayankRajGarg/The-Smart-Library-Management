@@ -1,0 +1,82 @@
+JDX_DATABASE JDX:jdbc:postgresql://<PUBLIC_IP_OF_CLOUD_SQL>:5432/postgres?user=postgres&password=<PASSWORD>;DEBUG_LEVEL=3
+JDBC_DRIVER org.postgresql.Driver
+
+// Please see JDX_DATABASE_JDBC_DRIVER_Specification_Guide (.md or .html) file for 
+// a guide to use different databases (e.g., Postgres or MySQL) in the mapping file.
+
+OBJECT_MODEL_OVERVIEW This object model describes Smart Library relationships
+
+JDX_OBJECT_MODEL_PACKAGE com.softwaretree.jdxjson2example.model
+;
+REM ************************************************************************
+
+CLASS .Library TABLE Library
+
+   // Persistent attributes
+   VIRTUAL_ATTRIB libraryId ATTRIB_TYPE int
+   VIRTUAL_ATTRIB name ATTRIB_TYPE java.lang.String
+
+   // Mapping
+   PRIMARY_KEY libraryId
+
+   RELATIONSHIP books REFERENCES ArrayBook BYVALUE WITH libraryId
+   RELATIONSHIP members REFERENCES ArrayMember BYVALUE WITH libraryId
+   RELATIONSHIP staff REFERENCES ArrayStaff BYVALUE WITH libraryId
+   RELATIONSHIP librarytransactions REFERENCES ArrayTransaction BYVALUE WITH libraryId
+;
+
+CLASS .Book TABLE Book
+
+   VIRTUAL_ATTRIB bookId ATTRIB_TYPE int
+   VIRTUAL_ATTRIB libraryId ATTRIB_TYPE int
+   VIRTUAL_ATTRIB title ATTRIB_TYPE java.lang.String
+
+   PRIMARY_KEY bookId
+;
+
+CLASS .Member TABLE Member
+
+   VIRTUAL_ATTRIB memberId ATTRIB_TYPE int
+   VIRTUAL_ATTRIB libraryId ATTRIB_TYPE int
+   VIRTUAL_ATTRIB name ATTRIB_TYPE java.lang.String
+
+   PRIMARY_KEY memberId
+;
+
+CLASS .Staff TABLE Staff
+
+   VIRTUAL_ATTRIB staffId ATTRIB_TYPE int
+   VIRTUAL_ATTRIB libraryId ATTRIB_TYPE int
+   VIRTUAL_ATTRIB name ATTRIB_TYPE java.lang.String
+
+   PRIMARY_KEY staffId
+;
+
+CLASS .LibraryTransaction TABLE LibraryTransaction
+
+   VIRTUAL_ATTRIB transactionId ATTRIB_TYPE int
+   VIRTUAL_ATTRIB bookId ATTRIB_TYPE int
+   VIRTUAL_ATTRIB memberId ATTRIB_TYPE int
+   VIRTUAL_ATTRIB staffId ATTRIB_TYPE int
+   VIRTUAL_ATTRIB libraryId ATTRIB_TYPE int
+   VIRTUAL_ATTRIB type ATTRIB_TYPE java.lang.String
+   VIRTUAL_ATTRIB date ATTRIB_TYPE java.lang.String
+
+   PRIMARY_KEY transactionId
+;
+
+COLLECTION_CLASS ArrayBook COLLECTION_TYPE ARRAY ELEMENT_CLASS .Book
+   PRIMARY_KEY libraryId
+;
+
+COLLECTION_CLASS ArrayMember COLLECTION_TYPE ARRAY ELEMENT_CLASS .Member
+   PRIMARY_KEY libraryId
+;
+
+COLLECTION_CLASS ArrayStaff COLLECTION_TYPE ARRAY ELEMENT_CLASS .Staff
+   PRIMARY_KEY libraryId
+;
+
+COLLECTION_CLASS ArrayTransaction COLLECTION_TYPE ARRAY ELEMENT_CLASS .LibraryTransaction
+   PRIMARY_KEY libraryId
+;

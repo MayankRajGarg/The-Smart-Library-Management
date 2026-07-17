@@ -1,0 +1,57 @@
+{
+  "entity": {
+    "libraryId": 1,
+    "name": "Central Library",
+    "books": [
+      {
+        "bookId": 101,
+        "libraryId": 1,
+        "title": "Clean Code"
+      },
+      {
+        "bookId": 102,
+        "libraryId": 1,
+        "title": "Design Patterns"
+      }
+    ],
+    "members": [
+      {
+        "memberId": 201,
+        "libraryId": 1,
+        "name": "Alice"
+      },
+      {
+        "memberId": 202,
+        "libraryId": 1,
+        "name": "Bob"
+      }
+    ],
+    "staff": [
+      {
+        "staffId": 301,
+        "libraryId": 1,
+        "name": "Admin"
+      }
+    ],
+    "librarytransactions": [
+      {
+        "transactionId": 401,
+        "libraryId": 1,
+        "bookId": 101,
+        "memberId": 201,
+        "staffId": 301,
+        "type": "ISSUE",
+        "date": "2026-07-11"
+      },
+      {
+        "transactionId": 402,
+        "libraryId": 1,
+        "bookId": 102,
+        "memberId": 202,
+        "staffId": 301,
+        "type": "ISSUE",
+        "date": "2026-07-12"
+      }
+    ]
+  }
+}

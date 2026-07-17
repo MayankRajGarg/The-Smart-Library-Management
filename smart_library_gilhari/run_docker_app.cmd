@@ -1,0 +1,1 @@
+docker run  -p 80:8081 smart_library_system:1.0

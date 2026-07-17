@@ -1,0 +1,33 @@
+# Compiled class file
+# Keep compiled Java/class files (if any)
+# With the pre-cpompiled .class files included, users can immediately build with Docker and run the example.
+#bin/
+*.class
+
+# Log file
+*.log
+curl.log
+
+# BlueJ files
+*.ctxt
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Database files (if they're generated/temporary)
+*.db
+*.sqlite
+
+# Generated files
+gen/
+
+*.html
+*.htm
+*.pdf
+
