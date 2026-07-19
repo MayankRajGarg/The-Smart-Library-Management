@@ -1,4 +1,4 @@
-package com.softwaretree.jdxjson2example.model;
+package com.softwaretree.smartlibrary.model;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -13,14 +13,13 @@ import com.softwaretree.jdx.JDX_JSONObject;
  * @author Damodar Periwal
  *
  */
-public class Member extends JDX_JSONObject {
+public class LibraryTransaction extends JDX_JSONObject {
 
-    public Member() {
+    public LibraryTransaction() {
         super();
     }
 
-    public Member(JSONObject jsonObject) throws JSONException {
+    public LibraryTransaction(JSONObject jsonObject) throws JSONException {
         super(jsonObject);
     }
-
 }

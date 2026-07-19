@@ -1,0 +1,48 @@
+{
+  "entity": {
+    "libraryId": 2,
+    "name": "Other Library",
+    "books": [
+      {
+        "bookId": 501,
+        "libraryId": 2,
+        "title": "Clean"
+      },
+      {
+        "bookId": 502,
+        "libraryId": 2,
+        "title": "Design Patterns"
+      }
+    ],
+    "members": [
+      {
+        "memberId": 601,
+        "libraryId": 2,
+        "name": "BAlice"
+      },
+      {
+        "memberId": 602,
+        "libraryId": 2,
+        "name": "BobTee"
+      }
+    ],
+    "staff": [
+      {
+        "staffId": 701,
+        "libraryId": 2,
+        "name": "Admin - 2"
+      }
+    ],
+    "librarytransactions": [
+      {
+        "transactionId": 801,
+        "libraryId": 2,
+        "bookId": 502,
+        "memberId": 601,
+        "staffId": 701,
+        "type": "ISSUE",
+        "date": "2026-07-21"
+      }
+    ]
+  }
+}

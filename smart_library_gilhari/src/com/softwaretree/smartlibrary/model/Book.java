@@ -1,4 +1,4 @@
-package com.softwaretree.jdxjson2example.model;
+package com.softwaretree.smartlibrary.model;
 
 import org.json.JSONException;
 import org.json.JSONObject;

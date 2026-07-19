@@ -28,13 +28,13 @@ echo. >> curl.log
 echo ** Insert Library 1 ** >> curl.log
 curl -X POST "http://localhost:%port%/gilhari/v1/Library" ^
 -H "Content-Type: application/json" ^
--d @library1.json >> curl.log
+-d @libraryObjectExample1.json >> curl.log
 echo. >> curl.log
 
 echo ** Insert Library 2 ** >> curl.log
 curl -X POST "http://localhost:%port%/gilhari/v1/Library" ^
 -H "Content-Type: application/json" ^
--d @library2.json >> curl.log
+-d @libraryObjectExample2.json >> curl.log
 echo. >> curl.log
 
 echo ** Query all Libraries ** >> curl.log

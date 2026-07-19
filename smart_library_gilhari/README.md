@@ -296,35 +296,23 @@ http://localhost:<port>/gilhari/v1/:className
 
 **Comprehensive test scripts:**
 
-1. **curlCommands.cmd / .sh** - Complete demonstration of relationship operations
+1. **curlCommandsPopulate.cmd** - Complete demonstration of relationship operations
 
    Demonstrates:
    - Health check endpoint
-   - Creating A objects with and without contained objects
+   - Creating objects with contained objects
    - Deep and shallow queries
    - Path expressions for filtering
    - Cascading deletes (BYVALUE behavior)
-   - Aggregate operations
+   - Test Multiple operations and Pooputale with Sample Data
 
-2. **curlCommandsPopulate.cmd / .sh** - Advanced query demonstrations
-
-   Demonstrates:
-   - All features from curlCommands
-   - Sample data population
-   - **Projections** using `operationDetails` for selecting specific attributes
-   - **Selective follow** operations to include only specific relationships
-   - **Combined operations** (projections + follow)
-   - **MaxObjects** parameter for limiting results
 
 Run the scripts to generate a `curl.log` file with all responses:
 ```bash
 # Windows
-curlCommands.cmd
 curlCommandsPopulate.cmd
 
-
 # Custom port
-curlCommands.cmd 8899
 curlCommandsPopulate.sh 8899
 ```
 

@@ -1,6 +1,8 @@
 # 📚 Smart Library Management
 
 ### An AI Agentic Architecture to Access Database with Natural Language Query
+Smart Library Management is an AI-powered library management system that demonstrates a simpler way for AI agents to work with relational databases. Using an ORMCP MCP server, it exposes the library database as an intuitive object-oriented model (Books, Members, Staff, Transactions), allowing agents to query and update data without dealing with raw schemas or writing SQL
+
 
 ## What Is This?
 

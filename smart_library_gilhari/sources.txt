@@ -1,5 +1,5 @@
-./src/com/softwaretree/jdxjson2example/model/Library.java
-./src/com/softwaretree/jdxjson2example/model/Book.java
-./src/com/softwaretree/jdxjson2example/model/Member.java
-./src/com/softwaretree/jdxjson2example/model/Staff.java
-./src/com/softwaretree/jdxjson2example/model/LibraryTransaction.java
+./src/com/softwaretree/smartlibrary/model/Library.java
+./src/com/softwaretree/smartlibrary/model/Book.java
+./src/com/softwaretree/smartlibrary/model/Member.java
+./src/com/softwaretree/smartlibrary/model/Staff.java
+./src/com/softwaretree/smartlibrary/model/LibraryTransaction.java

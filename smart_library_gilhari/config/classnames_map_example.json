@@ -1,7 +1,7 @@
 {
-  "Library": "com.softwaretree.jdxjson2example.model.Library",
-  "Book": "com.softwaretree.jdxjson2example.model.Book",
-  "Member": "com.softwaretree.jdxjson2example.model.Member",
-  "Staff": "com.softwaretree.jdxjson2example.model.Staff",
-  "LibraryTransaction": "com.softwaretree.jdxjson2example.model.LibraryTransaction"
+  "Library": "com.softwaretree.smartlibrary.model.Library",
+  "Book": "com.softwaretree.smartlibrary.model.Book",
+  "Member": "com.softwaretree.smartlibrary.model.Member",
+  "Staff": "com.softwaretree.smartlibrary.model.Staff",
+  "LibraryTransaction": "com.softwaretree.smartlibrary.model.LibraryTransaction"
 }

@@ -6,7 +6,7 @@ JDBC_DRIVER org.postgresql.Driver
 
 OBJECT_MODEL_OVERVIEW This object model describes Smart Library relationships
 
-JDX_OBJECT_MODEL_PACKAGE com.softwaretree.jdxjson2example.model
+JDX_OBJECT_MODEL_PACKAGE com.softwaretree.smartlibrary.model
 ;
 REM ************************************************************************
 
