@@ -61,6 +61,11 @@ The project integrates:
 
 Instead of allowing the AI model to generate SQL, the agent communicates with the ORMCP server, which exposes business objects through MCP tools. ORMCP internally communicates with the Gilhari microservice, which performs CRUD operations on a PostgreSQL database. This architecture enables secure, structured, and object-oriented access to relational data while taking advantage of modern AI agents.
 
+- **JDX** - JDX is a Java ORM engine that reverse-engineers relational database schemas into a curated Java/JSON object model — the foundational data-access layer beneath Gilhari.
+
+- **Gilhari** - Gilhari packages a JDX object model as a RESTful microservice — exposing your database as a curated, object-oriented REST API with no hand-written server code.
+ORMCP
+- **ORMCP** - a Model Context Protocol(MCP) server, it bridges AI agents to your database through Gilhari. It Gives them a governed, object-oriented view of your data and not raw SQL or table rows.
 ## Project Structure
 
 ```
